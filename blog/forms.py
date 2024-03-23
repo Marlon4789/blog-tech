@@ -1,7 +1,5 @@
 from django import forms
 from .models import QuillPost
-#from django_quill.forms import QuillFormField
-
 class QuillPostForm(forms.ModelForm):
 
     def clean_content(self):
@@ -16,7 +14,6 @@ class QuillPostForm(forms.ModelForm):
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Ingrese el título'}),
             'description': forms.Textarea(attrs={'class': 'form-control', 'rows': 3, 'placeholder': 'Ingrese la descripción'}),
-            
             'image_url': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Ingrese la URL de la imagen'}),
         }
         labels = {
@@ -26,6 +23,3 @@ class QuillPostForm(forms.ModelForm):
             'image_url': '',
         }
 
-
-# class QuillFieldForm(forms.Form):
-#     content = QuillFormField()

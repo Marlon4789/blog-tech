@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('create_post/', views.model_form_view, name='create_post'),
     path('detail/<int:quillpost_id>/', views.quillpost_detail, name="detail"),
+    path('show_all_posts/', views.show_all_post, name='show_posts'),
 ]
