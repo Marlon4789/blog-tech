@@ -13,9 +13,12 @@
 <body style="background-color: whitesmoke;">
     <!-- Navbar -->
     <div class="container-fluid p-3 bg-dark fixed-top">
-        <ul class="nav justify-content-center gap-3">
+        <ul class="nav justify-content-center align-items-center gap-3">
             <li class="nav-item">
               <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover link-light" aria-current="page" href="{% url 'create_post' %}">Crear Post</a>
+            </li>
+            <li class="text-white">
+                | 
             </li>
             <li class="nav-item">
               <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover link-light" href="{% url 'show_all_posts' %}">Ver Posts</a>
