@@ -13,13 +13,13 @@ class QuillPostForm(forms.ModelForm):
         fields = ('title', 'image_url', 'description', 'content',)
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Ingrese el título'}),
-            'description': forms.Textarea(attrs={'class': 'form-control', 'rows': 3, 'placeholder': 'Ingrese la descripción'}),
+            'description': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Ingrese la descripción'}),
             'image_url': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Ingrese la URL de la imagen'}),
         }
         labels = {
-            'title': '',
-            'description': '',
+            'title': 'Crear titulo',
+            'description': 'Descripción',
             'content': '',
-            'image_url': '',
+            'image_url': 'Subir imagen',
         }
 
